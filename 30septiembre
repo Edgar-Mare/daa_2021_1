@@ -1,0 +1,107 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOCYffBcp+qEAxv+swJ3dtC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/pandemicbat801/daa_2021_1/blob/master/30septiembre\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1aBCKL-TQItH"
+      },
+      "source": [
+        "#Palindromos\n",
+        "Es una palabra que se lee de igual formade un sentido y de sentido inverso, ejemplo:\n",
+        "1. sugus\n",
+        "2. reconocer\n",
+        "3. oso\n",
+        "4. 10101\n",
+        "5. 10:01\n",
+        "etc.\n",
+        "\n",
+        "###Planteamiento del problema\n",
+        "Se deseada encontrar todos los palindromos quese encuentran en un dia completo tomando  como horario inicial las 00:00 horas y como horario final las 23:59 horas. \n",
+        "\n",
+        "El algortimodebe mostrar en pantalla todos los algoritmos exixtentes en ese rango, al final debe mostrar el conteo de todos los palindromos existentes.\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TGU8Gbj2P8Dm",
+        "outputId": "73db28a3-e020-4d6e-a0e4-3701ffbe0c56",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 425
+        }
+      },
+      "source": [
+        "hora1=\"0000\"\n",
+        "while hora1!=\"2359\":\n",
+        "  inv=hora1[::-1]\n",
+        "  if hora1==inv:\n",
+        "    print(hora1)\n",
+        "  new=int(hora1)\n",
+        "  new+=1\n",
+        "  horario=str(new).zfill(4)\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "0000\n",
+            "0110\n",
+            "0220\n",
+            "0330\n",
+            "0440\n",
+            "0550\n",
+            "0660\n",
+            "0770\n",
+            "0880\n",
+            "0990\n",
+            "1001\n",
+            "1111\n",
+            "1221\n",
+            "1331\n",
+            "1441\n",
+            "1551\n",
+            "1661\n",
+            "1771\n",
+            "1881\n",
+            "1991\n",
+            "2002\n",
+            "2112\n",
+            "2222\n",
+            "2332\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
