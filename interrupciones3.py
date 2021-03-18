@@ -18,7 +18,8 @@ while inicio:
                 bandera=False
 
     elif decision == 'n':
+        print('Bye bye!!')
         inicio = False
     else:
         time.sleep(1)
-        print('error')
+        print(f'Error "{decision}" no es una instrucción valida.')
